@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="en-us">
-<head>
+<html lang="zh-CN">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
 
-    <title>First | JustQing</title>
-    <meta property="og:title" content="First - JustQing">
+    <title>First | mqnails</title>
+    <meta property="og:title" content="First - mqnails">
     <meta property="og:type" content="article">
         
     <meta property="article:published_time" content='2025-01-09T14:04:48&#43;08:00'>
@@ -16,11 +18,11 @@
         
     <meta property="article:modified_time" content='2025-01-09T14:04:48&#43;08:00'>
         
-    <meta name="Keywords" content="">
+    <meta name="Keywords" content="Life and Love">
     <meta name="description" content="First">
         
-    <meta name="author" content="">
-    <meta property="og:url" content="https://mqnails.github.io/post/first/">
+    <meta name="author" content="mqnails">
+    <meta property="og:url" content="http://localhost:1313/post/first/">
     <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
     <link rel="icon" href='/favicon.png' type="image/png">
     <link rel="alternate icon" href='/favicon.png' type="image/svg+xml">
@@ -45,15 +47,21 @@
         <div class="col-group">
             <div class="site-name ">
                 
-                    <a id="logo" href="https://mqnails.github.io/">
-                        JustQing
+                    <a id="logo" href="http://localhost:1313/">
+                        mqnails
                     </a>
                 
-                
+                <p class="description">On The Way...</p>
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="current" href="https://mqnails.github.io/">Home</a>
+                    <a class="current" href="http://localhost:1313/">Home</a>
+                    
+                    <a  href="http://localhost:1313/book/" title="book">book</a>
+                    
+                    <a  href="http://localhost:1313/archives/" title="archives">archives</a>
+                    
+                    <a  href="http://localhost:1313/about/" title="about">about</a>
                     
                 </nav>
             </div>
@@ -68,7 +76,104 @@
                 <div class="col-8" id="main">
                     
 <div class="res-cons">
-    
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">Table of Contents</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents"></nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if (leftPos < 220) {
+                postToc.css({ "width": leftPos - 10, "margin-left": (0 - leftPos) })
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+
+        if ($("#TableOfContents").children().length < 1) {
+            $(".post-toc").remove();
+        }
+    })
+</script>
     <article class="post">
         <header>
             <h1 class="post-title">First</h1>
@@ -81,16 +186,42 @@
 
 
         
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">&nbsp;|
+                <span id="busuanzi_value_page_pv"></span> <span>reads</span>
+            </span>
+        </div>
+        
         
         <div class="post-content">
-            <p>第一篇</p>
+            <p>empty</p>
 
         </div>
 
         
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>Author: </strong><a rel="author" href="http://localhost:1313/">mqnails</a></li>
+        <li style="word-break:break-all"><strong>Link: </strong><a href="http://localhost:1313/post/first/">http://localhost:1313/post/first/</a></li>
+        <li><strong>License: </strong><a rel="license" href="https://mqnails.github.io/">CopyLeft Free</a>. </li>
+    </ul>
+</div>
+<br/>
+
 
 
         
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/archives/">Archives</a></li>
+        
+        <li><a href="/search/">搜索</a></li>
+        
+    </ul>
+</div>
 
 
         <div class="post-meta meta-tags">
@@ -104,6 +235,16 @@
 
     
     
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "mqnails/mqnails.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
     
     
 
@@ -111,7 +252,7 @@
 
                     <footer id="footer">
     <div>
-        &copy; 2025 <a href="https://mqnails.github.io/">JustQing By </a>
+        &copy; 2025 <a href="http://localhost:1313/">mqnails By mqnails</a>
         
     </div>
     <br />
@@ -120,7 +261,7 @@
             <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
         </div>
         <div class="github-badge">
-            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+            
         </div>
         <div class="github-badge">
             <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
@@ -223,6 +364,9 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 </script>
 
 
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
 
 
 
@@ -230,10 +374,10 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+        <form id="search" action='http://localhost:1313/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="https://mqnails.github.io/">
+      <input type="hidden" name="sitesearch" value="http://localhost:1313/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
@@ -243,7 +387,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 <ul class="widget-list">
     
     <li>
-        <a href="https://mqnails.github.io/post/first/" title="First" target="_blank">First</a>
+        <a href="http://localhost:1313/post/first/" title="First" target="_blank">First</a>
     </li>
     
 </ul>
@@ -266,11 +410,22 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     </section>
 
     
+<section class="widget">
+    <h3 class="widget-title">Links</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.flysnow.org/" title="flysnow blog">flysnow</a>
+        </li>
+        
+    </ul>
+</section>
+
 
     <section class="widget">
         <h3 class="widget-title">Meta</h3>
         <ul class="widget-list">
-            <li><a href="https://mqnails.github.io/index.xml">RSS</a></li>
+            <li><a href="http://localhost:1313/index.xml">RSS</a></li>
         </ul>
     </section>
 </div>

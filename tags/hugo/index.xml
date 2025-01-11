@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on mqnails</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on mqnails</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 11 Jan 2025 16:42:37 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Second</title>
+      <link>http://localhost:1313/post/second/</link>
+      <pubDate>Sat, 11 Jan 2025 16:42:37 +0800</pubDate>
+      <guid>http://localhost:1313/post/second/</guid>
+      <description>&lt;p&gt;这里是摘要部分，空格可以分开正文和摘要&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

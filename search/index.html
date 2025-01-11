@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-	<meta name="generator" content="Hugo 0.140.2">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +9,16 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
     
 
-    <title>mqnails | On The Way...</title>
-    <meta property="og:title" content="mqnails | On The Way...">
-    <meta property="og:type" content="website">
+    <title>搜索 | mqnails</title>
+    <meta property="og:title" content="搜索 - mqnails">
+    <meta property="og:type" content="article">
+        
+        
     <meta name="Keywords" content="Life and Love">
-    <meta name="description" content="Just Qing">
-    <meta property="og:url" content="https://mqnails.github.io/">
+    <meta name="description" content="搜索页面">
+        
+    <meta name="author" content="mqnails">
+    <meta property="og:url" content="https://mqnails.github.io/search/">
     <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
     <link rel="icon" href='/favicon.png' type="image/png">
     <link rel="alternate icon" href='/favicon.png' type="image/svg+xml">
@@ -23,7 +26,6 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
-    <link rel="alternate" type="application/rss+xml" href="https://mqnails.github.io/index.xml" title="mqnails" />
     <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -41,17 +43,15 @@
         <div class="col-group">
             <div class="site-name ">
                 
-                    <h1>
-                        <a id="logo" href="https://mqnails.github.io/">
-                            mqnails
-                        </a>
-                    </h1>
+                    <a id="logo" href="https://mqnails.github.io/">
+                        mqnails
+                    </a>
                 
                 <p class="description">On The Way...</p>
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="current" href="https://mqnails.github.io/">Home</a>
+                    <a class="" href="https://mqnails.github.io/">Home</a>
                     
                     <a  href="https://mqnails.github.io/book/" title="book">book</a>
                     
@@ -70,16 +70,70 @@
             <div class="col-group">
 
                 <div class="col-8" id="main">
-                    
-<div class="res-cons">
-    
-    
+                    <div class="res-cons">
+    <h3 class="archive-title">
+        Search: 
+        <span class="keyword">Keyword</span>
+        results
+    </h3>
 
-
-
-
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="链接" target="_blank">标题</a>
+            </h1>
+        </header>
+        
+        <div class="post-content">
+            概要……
+            <p class="readmore"><a href="链接" target="_blank">Continue reading</a></p>
+        </div>
+    </article>
 
 </div>
+
+<script type="text/javascript">
+
+    var getUrlParameter = function getUrlParameter (sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+            }
+        }
+    };
+
+    $(document).ready(function () {
+        var q = getUrlParameter("q");
+        $("span.keyword").text(q);
+        $("article.post").remove();
+        $.ajax({
+            url: 'https:\/\/mqnails.github.io\/index.xml',
+            dataType: "xml",
+            success: function (data) {
+                $(data).find("item").each(function () {
+                    var item = $(this);
+                    var title = item.find("title").text();
+                    if (title.toLowerCase().indexOf(q.toLowerCase()) >= 0) {
+                        var url = item.find("link").text();
+                        var searchItem = `<article class="post"><header><h1 class="post-title"><a href="` + url + `" target="_blank">` + title + `</a></h1></header>`;
+                        var pubDate = new Date(item.find("pubDate").text())
+                        searchItem += `<time class="post-meta meta-date">` + pubDate.getFullYear() + `-` + (pubDate.getMonth() + 1) + `-` + pubDate.getDate() + `</time>`;
+                        searchItem += `<div class="post-content">` + item.find("description").text() + `……<p class="readmore"><a href="` + url + `" target="_blank">` + "Continue reading" + `</a></p></div></article>`;
+
+                        $("div.res-cons").append(searchItem);
+                    }
+                });
+            }
+        });
+    });
+</script>
 
                     <footer id="footer">
     <div>
@@ -101,6 +155,17 @@
 </footer>
 
 
+    
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 <a id="rocket" href="#top"></a>
 <script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
