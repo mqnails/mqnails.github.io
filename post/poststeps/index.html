@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,20 +9,20 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
     
 
-    <title>About | mqnails</title>
-    <meta property="og:title" content="About - mqnails">
+    <title>Poststeps | mqnails</title>
+    <meta property="og:title" content="Poststeps - mqnails">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content='2025-01-08T19:54:42&#43;08:00'>
+    <meta property="article:published_time" content='2025-01-11T18:11:18&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='2025-01-08T19:54:42&#43;08:00'>
+    <meta property="article:modified_time" content='2025-01-11T18:11:18&#43;08:00'>
         
     <meta name="Keywords" content="Life and Love">
-    <meta name="description" content="About">
+    <meta name="description" content="Poststeps">
         
     <meta name="author" content="mqnails">
-    <meta property="og:url" content="https://mqnails.github.io/about/">
+    <meta property="og:url" content="http://localhost:1313/post/poststeps/">
     <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
     <link rel="icon" href='/favicon.png' type="image/png">
     <link rel="alternate icon" href='/favicon.png' type="image/svg+xml">
@@ -47,7 +47,7 @@
         <div class="col-group">
             <div class="site-name ">
                 
-                    <a id="logo" href="https://mqnails.github.io/">
+                    <a id="logo" href="http://localhost:1313/">
                         mqnails
                     </a>
                 
@@ -55,13 +55,13 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="https://mqnails.github.io/">Home</a>
+                    <a class="current" href="http://localhost:1313/">Home</a>
                     
-                    <a  href="https://mqnails.github.io/book/" title="book">book</a>
+                    <a  href="http://localhost:1313/book/" title="book">book</a>
                     
-                    <a  href="https://mqnails.github.io/archives/" title="archives">archives</a>
+                    <a  href="http://localhost:1313/archives/" title="archives">archives</a>
                     
-                    <a class="current" href="https://mqnails.github.io/about/" title="about">about</a>
+                    <a  href="http://localhost:1313/about/" title="about">about</a>
                     
                 </nav>
             </div>
@@ -176,13 +176,20 @@
 </script>
     <article class="post">
         <header>
-            <h1 class="post-title">About</h1>
+            <h1 class="post-title">Poststeps</h1>
         </header>
         
-  <time datetime="2025-01-08T11:54:42Z" class="post-meta meta-date dt-published">
-    2025-01-08
+  <time datetime="2025-01-11T10:11:18Z" class="post-meta meta-date dt-published">
+    2025-01-11
   </time>
 
+
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='/categories/blog' target="_blank">blog</a>
+  
+</div>
 
 
         
@@ -194,11 +201,42 @@
         
         
         <div class="post-content">
-            <p>我是mqnails， 热爱旅行， on the way always&hellip;.</p>
+            <ul>
+<li>
+<p>发布文章步骤如下</p>
+<ol>
+<li>进入目录/Users/mqnails/project/Home/blog</li>
+<li>生成文章hugo new post/xxx.md</li>
+<li>编辑文章</li>
+<li>本机查看效果，执行hugo server &ndash;buildDrafts</li>
+<li>打开http://localhost:1313 看效果</li>
+<li>发布，git push到github</li>
+<li>打开https://mqnails.github.io 看效果</li>
+</ol>
+</li>
+<li>
+<p>front matter中字段含说明</p>
+<ol>
+<li>draft = true; 发布时候隐藏文章</li>
+<li>tags 是给文章加tag</li>
+<li>categories 是给文章加一个目录分类</li>
+<li>summary 是文章的摘要， 如果不配置的话， 会用hugo.toml里配置的summaryLength来从正文里截取摘要，hugo的summaryLength配置对中文无效，可以加空格来截取摘要部分</li>
+</ol>
+</li>
+</ul>
 
         </div>
 
         
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>Author: </strong><a rel="author" href="http://localhost:1313/">mqnails</a></li>
+        <li style="word-break:break-all"><strong>Link: </strong><a href="http://localhost:1313/post/poststeps/">http://localhost:1313/post/poststeps/</a></li>
+        <li><strong>License: </strong>This work is under a <a rel="license" href="https://mqnails.github.io/">CopyLeft Free</a>. Kindly fulfill the requirements of the aforementioned License when adapting or creating a derivative of this work.</li>
+    </ul>
+</div>
+<br/>
+
 
 
         
@@ -207,9 +245,15 @@
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/archives/">Archives</a></li>
+        <li><a href="/post/second/">Second</a></li>
         
-        <li><a href="/search/">搜索</a></li>
+        <li><a href="/book/firstbook/">Firstbook</a></li>
+        
+        <li><a href="/post/first/">First</a></li>
+        
+        <li><a href="/about/">About</a></li>
+        
+        <li><a href="/archives/">Archives</a></li>
         
     </ul>
 </div>
@@ -217,7 +261,13 @@
 
         <div class="post-meta meta-tags">
             
-            No tags
+            <ul class="clearfix">
+                
+                <li><a href='/tags/hugo' target="_blank">hugo</a></li>
+                
+                <li><a href='/tags/blog' target="_blank">blog</a></li>
+                
+            </ul>
             
         </div>
     </article>
@@ -243,7 +293,7 @@
 
                     <footer id="footer">
     <div>
-        &copy; 2025 <a href="https://mqnails.github.io/">mqnails By mqnails</a>
+        &copy; 2025 <a href="http://localhost:1313/">mqnails By mqnails</a>
         
     </div>
     <br />
@@ -279,6 +329,80 @@
 
 
 
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
 
 
     <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
@@ -290,10 +414,10 @@
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='https://mqnails.github.io/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+        <form id="search" action='http://localhost:1313/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="https://mqnails.github.io/">
+      <input type="hidden" name="sitesearch" value="http://localhost:1313/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
@@ -303,7 +427,19 @@
 <ul class="widget-list">
     
     <li>
-        <a href="https://mqnails.github.io/post/genesis/" title="缘起" target="_blank">缘起</a>
+        <a href="http://localhost:1313/post/genesis/" title="缘起" target="_blank">缘起</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/poststeps/" title="Poststeps" target="_blank">Poststeps</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/second/" title="Second" target="_blank">Second</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/first/" title="First" target="_blank">First</a>
     </li>
     
 </ul>
@@ -315,12 +451,18 @@
         <h3 class="widget-title"><a href='/categories/'>Categories</a></h3>
 <ul class="widget-list">
     
+    <li><a href="http://localhost:1313/categories/blog/">Blog (2)</a></li>
+    
 </ul>
     </section>
 
     <section class="widget">
         <h3 class="widget-title"><a href='/tags/'>Tags</a></h3>
 <div class="tagcloud">
+    
+    <a href="http://localhost:1313/tags/blog/">Blog</a>
+    
+    <a href="http://localhost:1313/tags/hugo/">Hugo</a>
     
 </div>
     </section>
@@ -341,7 +483,7 @@
     <section class="widget">
         <h3 class="widget-title">Meta</h3>
         <ul class="widget-list">
-            <li><a href="https://mqnails.github.io/index.xml">RSS</a></li>
+            <li><a href="http://localhost:1313/index.xml">RSS</a></li>
         </ul>
     </section>
 </div>
