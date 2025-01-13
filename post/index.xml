@@ -6,8 +6,15 @@
     <description>Recent content in Posts on mqnails</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 11 Jan 2025 19:19:13 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2025 10:52:42 +0800</lastBuildDate>
     <atom:link href="https://mqnails.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo&#43;github pages搭建blog</title>
+      <link>https://mqnails.github.io/post/hugo_githubpages/</link>
+      <pubDate>Mon, 13 Jan 2025 10:52:42 +0800</pubDate>
+      <guid>https://mqnails.github.io/post/hugo_githubpages/</guid>
+      <description>&lt;h2 id=&#34;用hugo创建blog&#34;&gt;用hugo创建blog&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;安装hugo&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&#xA;&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;这是mac上安装hugo的命令，其他平台没有安装过&lt;/p&gt;</description>
+    </item>
     <item>
       <title>缘起</title>
       <link>https://mqnails.github.io/post/genesis/</link>
