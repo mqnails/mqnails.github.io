@@ -145,9 +145,9 @@
     <li><a href="#用hugo创建blog">用hugo创建blog</a></li>
     <li><a href="#配置github-pages">配置github pages</a></li>
     <li><a href="#配置本机和github互信">配置本机和github互信</a></li>
-    <li><a href="#配置github-action">配置github action</a></li>
+    <li><a href="#配置github-action-token">配置github action token</a></li>
     <li><a href="#blog源码项目使用action-token">blog源码项目使用action token</a></li>
-    <li><a href="#blog源码配置action">blog源码配置action</a></li>
+    <li><a href="#blog-github工程配置action">blog github工程配置action</a></li>
     <li><a href="#对maupassant主题进行定制">对maupassant主题进行定制</a></li>
   </ul>
 </nav>
@@ -266,17 +266,22 @@
 </div><p>启动测试server后， 登录 http://localhost:1313查看效果</p>
 <h2 id="配置github-pages">配置github pages</h2>
 <ol>
-<li>
-<p>创建github pages的repository</p>
-<ol>
-<li>登录你自己的github，比如https://github.com/mqnails</li>
-<li>从右上角的+选择 <strong>New repository</strong> 创建一个public的repository，名字为mqnails.github.io,后缀必须为github.io</li>
-<li>这个public的repository就是你的github pages, 域名mqnails.github.io可以对外访问</li>
+<li>创建github pages的repository</li>
 </ol>
-</li>
-<li>
-<p>创建一个私有repository作为你的blog的源代码存放地</p>
-</li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>登录你自己的github，比如https://github.com/mqnails
+</span></span><span style="display:flex;"><span>从右上角的+选择 New repository 创建一个public的repository，名字为mqnails.github.io,后缀必须为github.io
+</span></span><span style="display:flex;"><span>这个public的repository就是你的github pages, 域名mqnails.github.io可以对外访问
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>创建一个私有repository作为你的blog的源代码存放地</li>
 </ol>
 <h2 id="配置本机和github互信">配置本机和github互信</h2>
 <p>配置ssh key使得你的github和你本机互信, 本机可以用github的ssh-url来clone/push/pull你github上的项目</p>
@@ -293,36 +298,50 @@
 </div>
 </div><p>一路回车，生成的public key在~/.ssh/id_ed25519下</p>
 <ol start="2">
-<li>在github上配置信任生成的public key
-<ol>
-<li>点击头像-&gt;Settings-&gt;SSH and GPG keys-&gt;New SSH key</li>
-<li>随便起一个名字，把上一步生成的public key copy到key到内容中</li>
-<li>这个时候，你在你本机上就可以通过ssh-url，免密码git clone/push/pull 你github上的项目了</li>
+<li>在github上配置信任生成的public key</li>
 </ol>
-</li>
-</ol>
-<h2 id="配置github-action">配置github action</h2>
-<p>配置action可以在你git提交你的工程的时候， blog的静态文件会被自动编译，打包发布</p>
-<ol>
-<li>生成action token
-<ol>
-<li>点击头像-&gt;Settings-&gt;Developer settings-&gt;Personal access tokens-&gt;Tokens(classic)-&gt;Generate new token(classic)</li>
-<li>随便起个名字， Expiration：选择No expiration， Select scopes：只勾选repo</li>
-<li>生成的token只显示一次， 点击复制保存好</li>
-</ol>
-</li>
-</ol>
-<h2 id="blog源码项目使用action-token">blog源码项目使用action token</h2>
-<ol>
-<li>进入https://github.com/mqnails/blogsource，选择Settings-&gt;Secrets and Variables-&gt;Actions-&gt;New repository secret</li>
-<li>name随便起比如叫SECRET_FOR_PUBLISH_BLOG，Secret：填写刚才生成的action token</li>
-</ol>
-<h2 id="blog源码配置action">blog源码配置action</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>点击头像-&gt;Settings-&gt;SSH and GPG keys-&gt;New SSH key
+</span></span><span style="display:flex;"><span>随便起一个名字，把上一步生成的public key copy到key到内容中
+</span></span><span style="display:flex;"><span>这个时候，你在你本机上就可以通过ssh-url，免密码git clone/push/pull 你github上的项目了
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="配置github-action-token">配置github action token</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>点击头像-&gt;Settings-&gt;Developer settings-&gt;Personal access tokens-&gt;Tokens<span style="color:#000;font-weight:bold">(</span>classic<span style="color:#000;font-weight:bold">)</span>-&gt;Generate new token<span style="color:#000;font-weight:bold">(</span>classic<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>随便起个名字， Expiration：选择No expiration， Select scopes：只勾选repo
+</span></span><span style="display:flex;"><span>生成的token只显示一次， 点击复制保存好
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="blog源码项目使用action-token">blog源码项目使用action token</h2>
+<p>配置action可以让你在提交blog github工程的时候， 执行相应的blog配置的action动作，从而可以自动编译生成静态文件，并打包发布到mqnails.github.io</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>进入https://github.com/mqnails/blogsource，选择Settings-&gt;Secrets and Variables-&gt;Actions-&gt;New repository secret
+</span></span><span style="display:flex;"><span>name随便起比如叫SECRET_FOR_PUBLISH_BLOG，Secret：填写刚才生成的action token
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="blog-github工程配置action">blog github工程配置action</h2>
 <ol>
 <li>在blog下新增 .github/workflows/deploy.yml内容参考如下</li>
 </ol>
 <pre tabindex="0"><code>name: deploy
-
 on:
     push:
         branches:
@@ -336,31 +355,26 @@ jobs:
           with:
             submodules: true
             fetch-depth: 0
-
         - name: Setup Hugo
           uses: peaceiris/actions-hugo@v2
           with:
             hugo-version: &#34;latest&#34;
             extended: true
-
         - name: Build Web
           run: hugo
-
         - name: Deploy Web
           uses: peaceiris/actions-gh-pages@v3
           with:
             PERSONAL_TOKEN: ${{ secrets.SECRET_FOR_PUBLISH_BLOG }}
-            EXTERNAL_REPOSITORY: mqnails/mqnails.github.io
+            EXTERNAL_REPOSITORY: mqnails/mqnails.github.io # 你的github pages
             PUBLISH_BRANCH: main
-            PUBLISH_DIR: ./public
+            PUBLISH_DIR: ./public # blog编译后的静态文件目录，它会被push到你的github pages里
             commit_message: ${{ github.event.head_commit.message }}
 </code></pre><ol start="2">
 <li>如果此git push提交的话，就可以自动编译发布了</li>
 </ol>
 <h2 id="对maupassant主题进行定制">对maupassant主题进行定制</h2>
-<ol>
-<li>maupassant主题默认支持archives, about， 支持utteranc评论， 及menu，hugo.toml参考配置如下</li>
-</ol>
+<p>maupassant主题默认支持archives, about， 支持utteranc评论， 及menu，hugo.toml参考配置如下</p>
 <pre tabindex="0"><code>baseURL = &#39;https://mqnails.github.io/&#39;
 languageCode = &#39;zh-CN&#39;
 title = &#39;mqnails&#39;
