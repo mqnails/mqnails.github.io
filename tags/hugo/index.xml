@@ -6,21 +6,14 @@
     <description>Recent content in Hugo on mqnails</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 11 Jan 2025 18:11:18 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2025 10:52:42 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Poststeps</title>
-      <link>http://localhost:1313/post/poststeps/</link>
-      <pubDate>Sat, 11 Jan 2025 18:11:18 +0800</pubDate>
-      <guid>http://localhost:1313/post/poststeps/</guid>
-      <description>这是一个示例</description>
-    </item>
-    <item>
-      <title>Second</title>
-      <link>http://localhost:1313/post/second/</link>
-      <pubDate>Sat, 11 Jan 2025 16:42:37 +0800</pubDate>
-      <guid>http://localhost:1313/post/second/</guid>
-      <description>&lt;p&gt;这里是摘要部分，空格可以分开正文和摘要&lt;/p&gt;</description>
+      <title>hugo&#43;github pages搭建blog</title>
+      <link>http://localhost:1313/post/hugo_githubpages/</link>
+      <pubDate>Mon, 13 Jan 2025 10:52:42 +0800</pubDate>
+      <guid>http://localhost:1313/post/hugo_githubpages/</guid>
+      <description>记录hugo搭建blog的步骤</description>
     </item>
   </channel>
 </rss>
