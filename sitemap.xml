@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mqnails.github.io/categories/</loc>
-    <lastmod>2025-02-07T20:00:27+08:00</lastmod>
+    <loc>https://mqnails.github.io/post/cruise/</loc>
+    <lastmod>2025-02-07T20:16:24+08:00</lastmod>
   </url><url>
     <loc>https://mqnails.github.io/</loc>
+    <lastmod>2025-02-07T20:16:24+08:00</lastmod>
+  </url><url>
+    <loc>https://mqnails.github.io/post/</loc>
+    <lastmod>2025-02-07T20:16:24+08:00</lastmod>
+  </url><url>
+    <loc>https://mqnails.github.io/categories/</loc>
     <lastmod>2025-02-07T20:00:27+08:00</lastmod>
   </url><url>
     <loc>https://mqnails.github.io/categories/plan/</loc>
@@ -21,9 +27,6 @@
     <lastmod>2025-01-13T10:52:42+08:00</lastmod>
   </url><url>
     <loc>https://mqnails.github.io/post/hugo_githubpages/</loc>
-    <lastmod>2025-01-13T10:52:42+08:00</lastmod>
-  </url><url>
-    <loc>https://mqnails.github.io/post/</loc>
     <lastmod>2025-01-13T10:52:42+08:00</lastmod>
   </url><url>
     <loc>https://mqnails.github.io/tags/</loc>
