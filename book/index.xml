@@ -2,11 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on mqnails</title>
-    <link>https://mqnails.github.io/book/</link>
+    <link>http://localhost:1313/book/</link>
     <description>Recent content in Books on mqnails</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://mqnails.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jan 2025 17:38:13 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firstbook</title>
+      <link>http://localhost:1313/book/firstbook/</link>
+      <pubDate>Sat, 11 Jan 2025 17:38:13 +0800</pubDate>
+      <guid>http://localhost:1313/book/firstbook/</guid>
+      <description>&lt;p&gt;我是第一本书&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

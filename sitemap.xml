@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mqnails.github.io/categories/</loc>
+    <lastmod>2025-02-07T20:00:27+08:00</lastmod>
+  </url><url>
+    <loc>https://mqnails.github.io/</loc>
+    <lastmod>2025-02-07T20:00:27+08:00</lastmod>
+  </url><url>
+    <loc>https://mqnails.github.io/categories/plan/</loc>
+    <lastmod>2025-02-07T20:00:27+08:00</lastmod>
+  </url><url>
+    <loc>https://mqnails.github.io/project/</loc>
+    <lastmod>2025-02-07T20:00:27+08:00</lastmod>
+  </url><url>
+    <loc>https://mqnails.github.io/project/plan/</loc>
+    <lastmod>2025-02-07T20:00:27+08:00</lastmod>
+  </url><url>
     <loc>https://mqnails.github.io/tags/blog/</loc>
     <lastmod>2025-01-13T10:52:42+08:00</lastmod>
   </url><url>
-    <loc>https://mqnails.github.io/categories/</loc>
-    <lastmod>2025-01-13T10:52:42+08:00</lastmod>
-  </url><url>
     <loc>https://mqnails.github.io/post/hugo_githubpages/</loc>
-    <lastmod>2025-01-13T10:52:42+08:00</lastmod>
-  </url><url>
-    <loc>https://mqnails.github.io/</loc>
     <lastmod>2025-01-13T10:52:42+08:00</lastmod>
   </url><url>
     <loc>https://mqnails.github.io/post/</loc>
@@ -25,9 +34,6 @@
   </url><url>
     <loc>https://mqnails.github.io/post/genesis/</loc>
     <lastmod>2025-01-11T19:19:13+08:00</lastmod>
-  </url><url>
-    <loc>https://mqnails.github.io/book/</loc>
-    <lastmod>2025-01-11T17:38:13+08:00</lastmod>
   </url><url>
     <loc>https://mqnails.github.io/about/</loc>
     <lastmod>2025-01-08T19:54:42+08:00</lastmod>
