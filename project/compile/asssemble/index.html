@@ -9,20 +9,20 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
     
 
-    <title>年度计划 | mqnails</title>
-    <meta property="og:title" content="年度计划 - mqnails">
+    <title>从硬件到软件-第一个汇编器实现原理 | mqnails</title>
+    <meta property="og:title" content="从硬件到软件-第一个汇编器实现原理 - mqnails">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content='2025-02-07T20:00:27&#43;08:00'>
+    <meta property="article:published_time" content='2025-02-10T20:14:45&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='2025-02-07T20:00:27&#43;08:00'>
+    <meta property="article:modified_time" content='2025-02-10T20:14:45&#43;08:00'>
         
     <meta name="Keywords" content="Life and Love">
-    <meta name="description" content="年度计划">
+    <meta name="description" content="从硬件到软件-第一个汇编器实现原理">
         
     <meta name="author" content="mqnails">
-    <meta property="og:url" content="https://mqnails.github.io/project/plan/">
+    <meta property="og:url" content="https://mqnails.github.io/project/compile/asssemble/">
     <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
     <link rel="icon" href='/favicon.png' type="image/png">
     <link rel="alternate icon" href='/favicon.png' type="image/svg+xml">
@@ -176,18 +176,18 @@
 </script>
     <article class="post">
         <header>
-            <h1 class="post-title">年度计划</h1>
+            <h1 class="post-title">从硬件到软件-第一个汇编器实现原理</h1>
         </header>
         
-  <time datetime="2025-02-07T12:00:27Z" class="post-meta meta-date dt-published">
-    2025-02-07
+  <time datetime="2025-02-10T12:14:45Z" class="post-meta meta-date dt-published">
+    2025-02-10
   </time>
 
 
 <div class="post-meta meta-category">
   <span>&nbsp;|</span>
   
-    <a href='/categories/plan' target="_blank">plan</a>
+    <a href='/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86' target="_blank">编译原理</a>
   
 </div>
 
@@ -201,26 +201,41 @@
         
         
         <div class="post-content">
-            <p><strong>2025年计划看的书</strong></p>
+            <p><strong>问题</strong></p>
+<ol>
+<li>
+<p>没有高级语言的情况下， 第一个汇编器是如何实现的？</p>
+</li>
+<li>
+<p>二进制代码不是自动加载到CPU的，这个加载是由谁从一开始完成的？如果是cpu，那就是先有鸡还是先有蛋的问题。</p>
+</li>
+</ol>
+<p><strong>回答</strong></p>
 <ul>
-<li>MIT public class: linear algebra (Gilbert Strang professor)</li>
-<li>李良的概率论与数理统计</li>
-<li>哈工大陈鄞的编译原理</li>
+<li>加载程序到硬件
+需要硬件配合，分为两步</li>
 </ul>
-<p><strong>2025年计划的工程</strong></p>
+<ol>
+<li>硬件本身支持，指定某个寄存器里存储的内存地址，作为要加载的目标地址</li>
+<li>手动设置一系列开关，实现加载功能，将二进制代码(存储在某个非易失性存储设备（纸带等）)输入到1中的目标内存地址中。</li>
+</ol>
 <ul>
-<li>golang源码分析</li>
-<li>实现一个m语言</li>
-<li>私有化部署一个本地大模型</li>
+<li>程序的编写与汇编器
+加载的功能已经在一中实现了， 那么要加载的二进制代码从哪里来？ 这里就是汇编器引入的地方</li>
 </ul>
-<p><strong>2025年bussiness计划</strong>
-研究一下几个平台， 倾向ozon</p>
+<ol>
+<li>第一个汇编器是自己！将需要的功能编写为汇编代码，再手工把它转换成二进制操作码！然后通过一中实现的开关将它输入计算机，对芯片进行编程</li>
+<li>用这种方式编写的第一个程序是什么？一个非常简单的汇编器（因为必须手工汇编代码）</li>
+</ol>
 <ul>
-<li>ozon</li>
-<li>shopee</li>
-<li>tk</li>
-<li>amazon</li>
+<li>汇编器功能的扩展
+有了这个汇编器后，能做的事情慢慢就多起来了</li>
 </ul>
+<ol>
+<li>使用这个汇编器访问某种输入设备，将其从那里获得的代码汇编起来，并将结果存储在某种输出设备中。这里已经是操作系统的雏形了</li>
+<li>使用汇编器寻找在内存中固定位置的程序，并将输出写入存储内存中的其他固定位置。这个输出是一个支持更多功能的汇编器</li>
+<li>一直扩充汇编器的功能，直到支持整个指令集</li>
+</ol>
 
         </div>
 
@@ -233,15 +248,15 @@
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/cruise/">2025春节前游轮日本游</a></li>
+        
+        <li><a href="/project/plan/">年度计划</a></li>
+        
         <li><a href="/post/hugo_githubpages/">hugo&#43;github pages搭建blog</a></li>
         
         <li><a href="/post/genesis/">缘起</a></li>
         
         <li><a href="/about/">About</a></li>
-        
-        <li><a href="/archives/">Archives</a></li>
-        
-        <li><a href="/search/">搜索</a></li>
         
     </ul>
 </div>

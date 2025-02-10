@@ -6,8 +6,15 @@
     <description>Recent content on mqnails</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 07 Feb 2025 20:16:24 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 20:14:45 +0800</lastBuildDate>
     <atom:link href="https://mqnails.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从硬件到软件-第一个汇编器实现原理</title>
+      <link>https://mqnails.github.io/project/compile/asssemble/</link>
+      <pubDate>Mon, 10 Feb 2025 20:14:45 +0800</pubDate>
+      <guid>https://mqnails.github.io/project/compile/asssemble/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;没有高级语言的情况下， 第一个汇编器是如何实现的？&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2025春节前游轮日本游</title>
       <link>https://mqnails.github.io/post/cruise/</link>

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on mqnails</title>
-    <link>https://mqnails.github.io/project/</link>
-    <description>Recent content in Projects on mqnails</description>
+    <title>编译原理 on mqnails</title>
+    <link>https://mqnails.github.io/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+    <description>Recent content in 编译原理 on mqnails</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 10 Feb 2025 20:14:45 +0800</lastBuildDate>
-    <atom:link href="https://mqnails.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mqnails.github.io/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>从硬件到软件-第一个汇编器实现原理</title>
       <link>https://mqnails.github.io/project/compile/asssemble/</link>
       <pubDate>Mon, 10 Feb 2025 20:14:45 +0800</pubDate>
       <guid>https://mqnails.github.io/project/compile/asssemble/</guid>
       <description>&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;没有高级语言的情况下， 第一个汇编器是如何实现的？&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>年度计划</title>
-      <link>https://mqnails.github.io/project/plan/</link>
-      <pubDate>Fri, 07 Feb 2025 20:00:27 +0800</pubDate>
-      <guid>https://mqnails.github.io/project/plan/</guid>
-      <description>年度计划， 个人OKR， 努力实现</description>
     </item>
   </channel>
 </rss>
